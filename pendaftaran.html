@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorium Multimedia - Pendaftaran & Izin</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulir Layanan Laboratorium</h1>
+        <p>Pendaftaran Asisten Lab dan Pengajuan Peminjaman Alat / Ruangan</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="fasilitas.html">Fasilitas & Alat</a></li>
+            <li><a href="pendaftaran.html">Pendaftaran & Izin</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulir Pengajuan</h2>
+            <p>Isi data diri dan pilih jenis layanan laboratorium yang kamu butuhkan di bawah ini.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Data Identitas</legend>
+                    <p>
+                        <label for="nama_lengkap">Nama Lengkap:</label><br>
+                        <input type="text" id="nama_lengkap" name="nama_lengkap" required
+                            placeholder="Masukkan nama lengkap">
+                    </p>
+
+                    <p>
+                        <label for="email_aktif">Alamat Email:</label><br>
+                        <input type="email" id="email_aktif" name="email_aktif" required placeholder="nama@email.com">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Keperluan / Layanan</legend>
+                    <p>Pilih Jenis Pengajuan:</p>
+                    <p>
+                        <input type="radio" id="layanan_asisten" name="jenis_pengajuan" value="asisten_lab" required>
+                        <label for="layanan_asisten">Pendaftaran Asisten Laboratorium</label><br>
+
+                        <input type="radio" id="layanan_pinjam_alat" name="jenis_pengajuan" value="pinjam_alat">
+                        <label for="layanan_pinjam_alat">Peminjaman Perangkat / Kamera</label><br>
+
+                        <input type="radio" id="layanan_pinjam_ruang" name="jenis_pengajuan" value="pinjam_ruang">
+                        <label for="layanan_pinjam_ruang">Izin Penggunaan Studio Audio/Video</label>
+                    </p>
+
+                    <p>Minat Minat / Bidang Keahlian (Bisa Pilih Lebih dari Satu):</p>
+                    <p>
+                        <input type="checkbox" id="minat_desain" name="keahlian[]" value="desain_grafis">
+                        <label for="minat_desain">Desain Grafis & UI/UX</label><br>
+
+                        <input type="checkbox" id="minat_video" name="keahlian[]" value="video_editing">
+                        <label for="minat_video">Video Editing & Videografi</label><br>
+
+                        <input type="checkbox" id="minat_animasi" name="keahlian[]" value="animasi_3d">
+                        <label for="minat_animasi">Animasi 2D / 3D</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Kirim Formulir</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Laboratorium Multimedia. Seluruh Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+
+</html>
